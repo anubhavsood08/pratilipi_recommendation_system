@@ -86,13 +86,57 @@ We used **Collaborative Filtering (SVD - Singular Value Decomposition)** from th
 
 ## 📌 How to Run the Project
 
-### 1️⃣ Install Dependencies
+###  Install Dependencies
 First, install required Python libraries.
 ```sh
 pip install -r requirements.txt
-
+```
 ## 📌 Train the Model & Generate Recommendations  
 Run the following script to **train the recommendation model** and **generate recommendations**.
 
 ```sh
-python train_model.py
+python assignment.py
+```
+This script **trains the SVD model** and saves recommendations in `recommendations.csv`.
+# 🌍 Running the Streamlit App  
+
+The Streamlit app allows users to **input their User ID** and see **recommended stories**.
+
+## **1️⃣ Start the Web App**  
+Run this command:
+
+```sh
+streamlit run app1.py
+```
+This will launch the Streamlit app in your browser.
+
+
+## 2️⃣ How to Use the App  
+✅ Enter your **User ID**  
+✅ Click **"Get Recommendations"**  
+✅ The app will display **Top 5 Recommended Stories**  
+
+---
+
+# 📊 Model Evaluation  
+
+We used **RMSE (Root Mean Squared Error)** to evaluate the model.
+
+## **Final RMSE Score: 🚀 (After Optimization)**  
+- **Before Optimization:** `RMSE = 22.0882` ❌  
+- **After Optimization:** `RMSE = 9.21` ✅  
+
+### 📌 **Metrics Used**  
+- **RMSE** → Measures prediction accuracy (lower is better).  
+- **Precision@5** → Percentage of relevant recommendations.  
+- **Recall@5** → Percentage of actual interactions covered by recommendations.  
+
+---
+
+# 🚀 Future Improvements  
+
+✅ **Hybrid Model (Collaborative + Content-Based Filtering)** → To handle cold-start problems.  
+✅ **Deep Learning (Neural Networks)** → To learn complex patterns in user interactions.  
+✅ **Deploy on AWS/GCP** → To serve recommendations at scale.  
+
+
