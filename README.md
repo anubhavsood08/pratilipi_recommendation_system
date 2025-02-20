@@ -90,3 +90,9 @@ We used **Collaborative Filtering (SVD - Singular Value Decomposition)** from th
 First, install required Python libraries.
 ```sh
 pip install -r requirements.txt
+
+## 📌 Train the Model & Generate Recommendations  
+Run the following script to **train the recommendation model** and **generate recommendations**.
+
+```sh
+python train_model.py
